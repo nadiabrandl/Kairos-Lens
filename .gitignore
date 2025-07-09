@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+frontend/build/
+
+# Logs
+*.log
+
+# IDE settings (optional, if you're working in root)
+.idea/
+.vscode/
+
