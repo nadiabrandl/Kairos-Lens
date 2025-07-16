@@ -22,9 +22,9 @@ public class BiasAnalyzerService {
     private String openAiApiKey;
 
     private static final String OPENAI_API_URL = "https://api.openai.com/v1/chat/completions";
-    private OkHttpClient client;
+    private final OkHttpClient client;
 
-    public final BiasAnalyzerService(OkHttpClient client){
+    public BiasAnalyzerService(OkHttpClient client){
         this.client = client;
     }
 
