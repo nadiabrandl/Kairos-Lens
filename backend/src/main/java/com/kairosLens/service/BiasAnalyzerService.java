@@ -22,7 +22,11 @@ public class BiasAnalyzerService {
     private String openAiApiKey;
 
     private static final String OPENAI_API_URL = "https://api.openai.com/v1/chat/completions";
-    private final OkHttpClient client = new OkHttpClient();
+    private final OkHttpClient client;
+
+    public final BiasAnalyzerService(OkHttpClient client){
+        this.client = client;
+    }
 
     public String analyzeBias(String articleContent) throws IOException {
     	if (articleContent.contains("❗ Access denied while fetching article")) {   	    
