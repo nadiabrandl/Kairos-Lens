@@ -12,7 +12,7 @@ import com.kairosLens.dto.PoliticalAlignment;
 
 import java.io.IOException;
 
-@Service
+@Service("biasAnalyzerService")
 public class BiasAnalyzerService {
 	
 	BiasAnalysisResult result = new BiasAnalysisResult();
@@ -38,7 +38,7 @@ public class BiasAnalyzerService {
             result.setPoliticalAlignment(PoliticalAlignment.CENTER); // Or any default
             return mapper.writeValueAsString(result);
         }
-        
+
     	if (articleContent.contains("❗ Access denied while fetching article")) {   	    
     	    result.setBiasSummary("This article could not be analyzed due to access restrictions from the website.");
     	    result.setTone("N/A");
