@@ -1,9 +1,7 @@
 package com.kairosLens;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
-
 import org.junit.jupiter.api.Test;
-
 import com.kairosLens.service.ArticleFetcher;
 
 public class ArticleFetcherTest {
