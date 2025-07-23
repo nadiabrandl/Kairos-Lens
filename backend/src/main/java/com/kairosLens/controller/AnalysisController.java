@@ -14,7 +14,7 @@ public class AnalysisController {
     private final ArticleFetcher fetcher;
     private final BiasAnalyzerService analyzer;
 
-    public AnalysisController(ArticleFetcher fetcher, BiasAnalyzerService analyzer) {
+    public AnalysisController (ArticleFetcher fetcher, BiasAnalyzerService analyzer) {
         this.fetcher = fetcher;
         this.analyzer = analyzer;
     }
