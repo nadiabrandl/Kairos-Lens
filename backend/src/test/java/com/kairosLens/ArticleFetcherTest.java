@@ -1,6 +1,8 @@
 package com.kairosLens;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import com.kairosLens.service.ArticleFetcher;
 
@@ -28,7 +30,7 @@ public class ArticleFetcherTest {
         assertFalse(content.isBlank(), "Expected article content but got empty string.");
     }
 
-    @Skip("Skipping due to AllSides protections blocking CI runners")
+    @Disabled("Skipping due to AllSides protections blocking CI runners")
     @Test
     public void testFetchFromTheConversation() throws Exception {
     	System.out.println("..............................................................");
